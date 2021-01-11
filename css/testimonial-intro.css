@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fancy{
+  color: white;
+  font-size: 4rem;
+  font-family: 'Heebo', sans-serif;
+  text-align: center;
+  line-height: 70vh;
+}
+
+
+.edit{
+  opacity: 0;
+  color: green;
+  display: inline-block;
+  transition: all 1s ease;
+  transform: translateY(50px);
+}
+
+.edit.fade{
+  opacity: 1;
+  transform: translateY(0px);
+  color: white;
+}
+
+@media screen and (max-width: 620px){
+
+.fancy{
+  font-size: 2rem;
+  line-height: 50vh;
+}
+
+.cursor{
+  display: none;
+}
+
+}
